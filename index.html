@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SORA VPS Backup is a private, owner-operated disaster recovery utility that transfers encrypted backups from a VPS to the owner's Google Drive.">
+  <title>SORA VPS Backup — Personal Disaster Recovery</title>
+  <style>
+    :root { color-scheme: light; --ink:#122436; --muted:#546576; --line:#dce6eb; --accent:#087c6a; --bg:#f6f9fb; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:790px; padding:70px 24px 50px; margin:auto; }
+    .label { color:var(--accent); font-weight:700; text-transform:uppercase; font-size:12px; letter-spacing:.14em; }
+    h1 { font-size:clamp(34px,6vw,53px); line-height:1.13; letter-spacing:-.035em; margin:14px 0 24px; }
+    h2 { font-size:21px; margin:30px 0 10px; }
+    p { margin:0 0 16px; }
+    .lead { font-size:19px; color:var(--muted); max-width:650px; }
+    .panel { background:white; padding:28px 30px; border:1px solid var(--line); border-radius:16px; margin:34px 0; }
+    ul { margin:10px 0 0; padding-left:22px; }
+    li { margin:9px 0; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    footer { border-top:1px solid var(--line); padding-top:18px; margin-top:40px; font-size:14px; color:var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="label">Personal backup utility</div>
+  <h1>SORA VPS Backup</h1>
+  <p class="lead">A private disaster recovery utility for backing up the owner's SORA server to the owner's own Google Drive.</p>
+  <section class="panel">
+    <h2>What this application does</h2>
+    <p>SORA VPS Backup uses Rclone and Google OAuth to transfer encrypted backup archives from an owner-managed virtual private server (VPS) to Google Drive for disaster recovery.</p>
+    <ul>
+      <li>Transfers existing encrypted backup files to the owner's Google Drive.</li>
+      <li>Checks uploaded files for integrity by reading them back.</li>
+      <li>Helps the owner recover their system after server loss or failure.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Limited Google Drive permissions</h2>
+    <p>The application uses the <code>drive.file</code> OAuth scope, allowing access to Google Drive files created by or opened with the application. It is not intended to scan personal documents, emails, or unrelated Drive files.</p>
+    <h2>Who uses it?</h2>
+    <p>This is an owner-operated utility for personal infrastructure backup. It is not offered as a public backup service and does not have public user registration.</p>
+    <h2>Privacy and contact</h2>
+    <p>Read the <a href="privacy.html">Privacy Policy</a> for details about Google Drive data access, local credential handling, retention, and revoking access. For inquiries, use the support email displayed on the application's Google OAuth consent screen.</p>
+  </section>
+  <footer>SORA VPS Backup · Private server disaster recovery</footer>
+</main>
+</body>
+</html>

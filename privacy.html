@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for SORA VPS Backup, a private utility for transferring encrypted disaster recovery archives to Google Drive.">
+  <title>Privacy Policy — SORA VPS Backup</title>
+  <style>
+    :root { color-scheme:light; --ink:#122436; --muted:#546576; --line:#dce6eb; --accent:#087c6a; --bg:#f6f9fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.68 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:790px; padding:60px 24px 48px; margin:auto; }
+    a { color:var(--accent); text-underline-offset:3px; }
+    h1 { font-size:clamp(32px,5vw,45px); line-height:1.2; margin:18px 0 10px; letter-spacing:-.025em; }
+    h2 { font-size:20px; margin:32px 0 10px; }
+    p { margin:0 0 15px; }
+    .muted { color:var(--muted); }
+    footer { border-top:1px solid var(--line); padding-top:18px; margin-top:40px; font-size:14px; color:var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <a href="index.html">← Back to SORA VPS Backup</a>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: October 15, 2026</p>
+  <p>SORA VPS Backup is a private, owner-operated disaster recovery utility. It uses Google Drive through Rclone to store encrypted backup archives from the owner's virtual private server (VPS). It is not a publicly available backup service.</p>
+  <h2>Purpose and Google Drive access</h2>
+  <p>The application requests the Google Drive <code>drive.file</code> OAuth scope. This permits it to create, read, and manage files that it creates or that the user explicitly opens with the application. The application uses this access to upload encrypted archives, list the files it manages, and verify uploaded content. It is not intended to inspect unrelated personal Drive files.</p>
+  <h2>Data processed</h2>
+  <p>The utility processes encrypted disaster recovery archives and their supporting metadata, such as integrity hashes and restoration instructions. The original server backups may contain sensitive operational data, but they are encrypted before transfer. The utility also uses Google OAuth tokens required for authenticated access.</p>
+  <h2>Storage and disclosure</h2>
+  <p>Encrypted backup files are stored in the owner's Google Drive account. OAuth credentials and refresh tokens are stored in the owner's Rclone configuration on the owner's computer or VPS; they are not published on this website. Data is not sold or provided to advertisers. Google processes stored data according to its own service terms and privacy practices.</p>
+  <h2>Retention and deletion</h2>
+  <p>The owner controls how long backup files are retained and can delete them from Google Drive. Retention schedules may be configured separately in the backup system. No fixed cloud retention period is promised by this website.</p>
+  <h2>Security</h2>
+  <p>Backups are encrypted before upload. Access to the Google Drive account and the VPS is managed by the owner. The owner is responsible for keeping recovery keys and OAuth credentials secure. The public website does not contain backup files, server secrets, or authentication tokens.</p>
+  <h2>Your controls</h2>
+  <p>The Google account owner can review and revoke OAuth access through Google Account settings at <a href="https://myaccount.google.com/connections">Third-party connections</a>. The owner can also delete managed backup files directly in Google Drive. Revoking access stops future authenticated uploads until access is granted again.</p>
+  <h2>Public website</h2>
+  <p>These information pages do not include application analytics, advertising trackers, or account registration forms. The hosting provider may process basic access information as part of providing the website.</p>
+  <h2>Contact</h2>
+  <p>For questions about this private application or its use of Google Drive data, contact the application owner using the support email shown on the Google OAuth consent screen.</p>
+  <footer>SORA VPS Backup · <a href="index.html">Homepage</a></footer>
+</main>
+</body>
+</html>
